@@ -43,7 +43,7 @@ for(let letter of letters) {
 
 // define getCocktail() function:
 function getCocktail () {
-    let baseURL = "thecocktaildb.com/api/json/v1/1/";
+    let baseURL = "https:thecocktaildb.com/api/json/v1/1/";
     let url = baseURL;
     //concat URL to make request to API end point
     //if the ting that called the value has a value it's NOT the button
