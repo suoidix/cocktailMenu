@@ -57,7 +57,7 @@ function getCocktail () {
     }
  
     //fetch the cocktails
-    fetch(url, { method: 'GET'}) //this returns a promise object
+    fetch(url) //this returns a promise object
     .then(jsonRes => jsonRes.json()) //parse into usable obj
     .then(obj => {
 
