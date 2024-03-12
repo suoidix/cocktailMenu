@@ -6,29 +6,21 @@ input.addEventListener('change', getCocktail);
 //get the select menu which is for choosing an ingredient
 const selectMenu = document.querySelector('select');
 selectMenu.addEventListener('change', getCocktail);
-// get the select menu:
-
-
-// searchUrl + "i=" + this.value
 
 // get Random Cocktai btn
 // click Random Cocktail btn to call function
 const button = document.querySelector('button');
 button.addEventListener('click', getCocktail);
 
-// output here
-
-//challange 
 //make the select menu options dynamically
 //letter-box div for the letter buttons
 const letterBox = document.querySelector('#letter-box')
-
 
 //cocktail box div for the output
 const cocktailBox = document.querySelector('#cocktail-box');
 
 cocktailkKeywords.sort();
-
+//create letter search
 cocktailkKeywords.forEach(word => {
     const option = document.createElement('option');
     option.value = word.toLowerCase(); //lemon
@@ -51,7 +43,7 @@ for(let letter of letters) {
 
 // define getCocktail() function:
 function getCocktail () {
-    let baseURL = "https:thecocktaildb.com/api/json/v1/1/";
+    let baseURL = "thecocktaildb.com/api/json/v1/1/";
     let url = baseURL;
     //concat URL to make request to API end point
     //if the ting that called the value has a value it's NOT the button
